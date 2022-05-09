@@ -27,7 +27,7 @@ Vue 推荐在绝大多数情况下使用模板来创建你的 HTML。然而在�
 当开始写一个只能通过 `level` prop 动态生成标题 (heading) 的组件时，你可能很快想到这样实现：
 
 ``` html
-<script type="text/x-template" id="anchored-heading-template">
+<template type="text/x-template" id="anchored-heading-template">
   <h1 v-if="level === 1">
     <slot></slot>
   </h1>
@@ -46,7 +46,7 @@ Vue 推荐在绝大多数情况下使用模板来创建你的 HTML。然而在�
   <h6 v-else-if="level === 6">
     <slot></slot>
   </h6>
-</script>
+</template>
 ```
 
 ``` js
